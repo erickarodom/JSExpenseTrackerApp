@@ -14,11 +14,14 @@ Here is an example of a working [Expense Tracker App](https://codepen.io/seklere
 
 
 ## Deliverables
-1. A user can create a todo item by entering text into an input box and pressing a button.
-2. A list of created todo items are shown on the screen.
-3. A user can mark any todo item as completed.
-4. When a todo item is marked as completed the text of the todo should ce crossed out (using strikethrough font).
-5. A user can delete an existing todo  (for todos that have been marked as completed).
+1. User can add a new expense by pressing a button.
+2. Each expense added is display on the screen in a table.
+3. The expense table shows the following columns.
+   -The date of expense
+   -A description of the expense
+   -The amount
+   -Where the purchases occurred (eg. McDonald’s)
+5. User can delete an expense.
 6. Application is publicly available on GitHub [pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) (explained).
 7. [My Live Application](https://erickarodom.github.io/project-four/)
 
