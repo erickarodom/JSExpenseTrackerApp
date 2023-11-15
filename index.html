@@ -32,15 +32,27 @@
                 id="item-purchased"
                 name="expense-form"
                 placeholder="What did you buy?"
+                required
               />
             </div>
             <div class="exp-ctnr">
               <label for="purchase-date">Date:</label>
-              <input type="date" id="purchase-date" name="expense-form" />
+              <input
+                type="date"
+                id="purchase-date"
+                name="expense-form"
+                required
+              />
             </div>
             <div class="exp-ctnr">
               <label for="amount">Amount:</label>
-              <input type="number" id="amount" name="expense-form" min="0" />
+              <input
+                type="number"
+                id="amount"
+                name="expense-form"
+                min="0"
+                required
+              />
             </div>
           </fieldset>
         </form>
@@ -61,6 +73,12 @@
             <td>Smith</td>
             <td>50</td>
             <td>50</td>
+          </tr>
+          <tr>
+            <td>Piel</td>
+            <td>Soup</td>
+            <td>10</td>
+            <td>25</td>
           </tr>
         </table>
       </div>

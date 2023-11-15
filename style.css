@@ -84,9 +84,16 @@ table {
   background-color: #fff1f1;
 }
 
+td {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.301);
+}
+
 th {
   text-transform: capitalize;
   background-color: rgb(43, 153, 226);
+}
+tr:nth-child(odd) {
+  background-color: #e6e6e681;
 }
 td {
   color: black;
@@ -95,4 +102,7 @@ td {
 
 fieldset {
   border-color: rgb(64, 151, 209);
+}
+legend {
+  font-size: 1.5em;
 }
