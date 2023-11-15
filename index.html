@@ -14,34 +14,55 @@
     <main>
       <div class="form-ctnr">
         <form>
-          <div class="exp-ctnr">
-            <label for="currency">Type:</label>
-            <input type="text" id="currency" name="expense-form" />
-          </div>
-          <div class="exp-ctnr">
-            <label for="item-purchased">Name:</label>
-            <input
-              type="text"
-              id="item-purchased"
-              name="expense-form"
-              placeholder="What did you buy?"
-            />
-          </div>
-          <div class="exp-ctnr">
-            <label for="purchase-date">Date:</label>
-            <input type="text" id="purchase-date" name="expense-form" />
-          </div>
-          <div class="exp-ctnr">
-            <label for="amount">Amount:</label>
-            <input type="text" id="amount" name="expense-form" />
-          </div>
+          <fieldset>
+            <legend>&dollar;&dollar;&dollar;</legend>
+            <div class="exp-ctnr">
+              <label for="currency">Type:</label>
+              <select type="text" id="currency" name="expense-form">
+                <option value="casj">Cash</option>
+                <option value="card">Card</option>
+                <option value="crypto">Crypto</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="exp-ctnr">
+              <label for="item-purchased">Name:</label>
+              <input
+                type="text"
+                id="item-purchased"
+                name="expense-form"
+                placeholder="What did you buy?"
+              />
+            </div>
+            <div class="exp-ctnr">
+              <label for="purchase-date">Date:</label>
+              <input type="date" id="purchase-date" name="expense-form" />
+            </div>
+            <div class="exp-ctnr">
+              <label for="amount">Amount:</label>
+              <input type="number" id="amount" name="expense-form" min="0" />
+            </div>
+          </fieldset>
         </form>
         <div class="btn-ctnr">
           <button type="button">Add a new expense</button>
         </div>
       </div>
       <div class="table-ctnr">
-        <form>table here</form>
+        <table>
+          <tr>
+            <th>type</th>
+            <th>name</th>
+            <th>date</th>
+            <th>amount</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+            <td>50</td>
+          </tr>
+        </table>
       </div>
     </main>
     <!-- start of scripts -->

@@ -8,13 +8,14 @@ body {
   font-size: 16px;
   font-family: "Courier New", Courier, monospace;
   font-weight: 300;
-  background-color: pink;
+  background-color: rgb(253, 168, 208);
   color: #fff;
 }
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 5em;
 }
 h1,
 h2 {
@@ -31,8 +32,6 @@ h2 {
 }
 .form-ctnr {
   width: 600px;
-  min-height: 500px;
-  background-color: orange;
   margin-bottom: 2em;
   text-align: center;
 }
@@ -48,16 +47,17 @@ h2 {
 label {
   font-size: 2em;
 }
-input {
+input,
+select {
   height: 2em;
   border-radius: 5px;
   border: solid 1px grey;
 }
-.table-ctnr {
-  background-color: rgb(59, 157, 243);
-  width: 600px;
-  min-height: 500px;
+select,
+input[type="date"] {
+  width: 223px;
 }
+
 .btn-ctnr button {
   color: white;
   background-color: rgb(43, 153, 226);
@@ -66,7 +66,6 @@ input {
   border-radius: 5px;
   border: solid 1px grey;
   box-shadow: -5px 6px 5px -4px rgba(23, 130, 209, 0.75);
-
   transition-duration: 0.5s;
 }
 
@@ -74,4 +73,26 @@ input {
   background-color: rgb(96, 161, 214);
   box-shadow: none;
   cursor: pointer;
+}
+
+.table-ctnr {
+  width: 600px;
+  min-height: 500px;
+}
+table {
+  width: 100%;
+  background-color: #fff1f1;
+}
+
+th {
+  text-transform: capitalize;
+  background-color: rgb(43, 153, 226);
+}
+td {
+  color: black;
+  font-weight: 800;
+}
+
+fieldset {
+  border-color: rgb(64, 151, 209);
 }
