@@ -13,7 +13,32 @@
     </header>
     <main>
       <div class="form-ctnr">
-        <form>inputs here</form>
+        <form>
+          <div class="exp-ctnr">
+            <label for="currency">Type:</label>
+            <input type="text" id="currency" name="expense-form" />
+          </div>
+          <div class="exp-ctnr">
+            <label for="item-purchased">Name:</label>
+            <input
+              type="text"
+              id="item-purchased"
+              name="expense-form"
+              placeholder="What did you buy?"
+            />
+          </div>
+          <div class="exp-ctnr">
+            <label for="purchase-date">Date:</label>
+            <input type="text" id="purchase-date" name="expense-form" />
+          </div>
+          <div class="exp-ctnr">
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" name="expense-form" />
+          </div>
+        </form>
+        <div class="btn-ctnr">
+          <button type="button">Add a new expense</button>
+        </div>
       </div>
       <div class="table-ctnr">
         <form>table here</form>

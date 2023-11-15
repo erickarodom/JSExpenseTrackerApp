@@ -9,6 +9,7 @@ body {
   font-family: "Courier New", Courier, monospace;
   font-weight: 300;
   background-color: pink;
+  color: #fff;
 }
 main {
   display: flex;
@@ -17,7 +18,6 @@ main {
 }
 h1,
 h2 {
-  color: #fff;
   text-align: center;
 }
 
@@ -34,9 +34,44 @@ h2 {
   min-height: 500px;
   background-color: orange;
   margin-bottom: 2em;
+  text-align: center;
+}
+
+.exp-ctnr {
+  margin-bottom: 5px;
+}
+
+.exp-ctnr:last-child {
+  margin-right: 40px;
+}
+
+label {
+  font-size: 2em;
+}
+input {
+  height: 2em;
+  border-radius: 5px;
+  border: solid 1px grey;
 }
 .table-ctnr {
   background-color: rgb(59, 157, 243);
   width: 600px;
   min-height: 500px;
+}
+.btn-ctnr button {
+  color: white;
+  background-color: rgb(43, 153, 226);
+  margin-top: 1.5em;
+  padding: 1.5em 1.5em;
+  border-radius: 5px;
+  border: solid 1px grey;
+  box-shadow: -5px 6px 5px -4px rgba(23, 130, 209, 0.75);
+
+  transition-duration: 0.5s;
+}
+
+.btn-ctnr button:hover {
+  background-color: rgb(96, 161, 214);
+  box-shadow: none;
+  cursor: pointer;
 }
