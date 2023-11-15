@@ -19,10 +19,10 @@
             <div class="exp-ctnr">
               <label for="currency">Type:</label>
               <select type="text" id="currency" name="expense-form">
-                <option value="casj">Cash</option>
-                <option value="card">Card</option>
-                <option value="crypto">Crypto</option>
-                <option value="other">Other</option>
+                <option id="cash" value="cash">Cash</option>
+                <option id="card" value="card">Card</option>
+                <option id="crypto" value="crypto">Crypto</option>
+                <option id="other" value="other">Other</option>
               </select>
             </div>
             <div class="exp-ctnr">
@@ -57,32 +57,31 @@
           </fieldset>
         </form>
         <div class="btn-ctnr">
-          <button type="button">Add a new expense</button>
+          <button type="button" id="add-btn">Add a new expense</button>
         </div>
       </div>
       <div class="table-ctnr">
         <table>
-          <tr>
-            <th>type</th>
-            <th>name</th>
-            <th>date</th>
-            <th>amount</th>
-          </tr>
-          <tr>
-            <td>Jill</td>
-            <td>Smith</td>
-            <td>50</td>
-            <td>50</td>
-          </tr>
-          <tr>
-            <td>Piel</td>
-            <td>Soup</td>
-            <td>10</td>
-            <td>25</td>
-          </tr>
+          <thead>
+            <tr>
+              <th>type</th>
+              <th>name</th>
+              <th>date</th>
+              <th>amount</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <tr>
+              <td style="text-align: center" colspan="4">
+                Your added items will show up here!
+              </td>
+            </tr>
+          </tfoot>
         </table>
       </div>
     </main>
     <!-- start of scripts -->
+    <script src="script.js"></script>
   </body>
 </html>
