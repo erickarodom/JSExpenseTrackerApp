@@ -10,20 +10,25 @@ const addBtn = document.getElementById("add-btn");
     footerMsg.remove();
 }
 
+
+
+function addRow() {
+    const deleteBtn = document.createElement("button");
+    
+    const table = document.getElementById("table-body");
+    const newRow = table.insertRow(-1);
+    for (let i = 0; i < 4; i++) {
+        const cell = newRow.insertCell(i);
+        cell.innerHTML = "New Cell";
+    }
+}
+
 function content(){
     const type= document.getElementById("currency").value;
     const item = document.getElementById("item-purchased").value;
     const datePurchased = document.getElementById("purchase-date").value;
     const cost = document.getElementById("amount").value;
-    let element = document.getElementById("table-body");
-    let newRow = document.createElement("tr");
-    let newCell = document.createElement("td");
-    newRow.appendChild(newCell);
-    element.appendChild(newRow);
-   
-   
- 
-    
+  
 }
 
 
@@ -31,5 +36,7 @@ function content(){
 
 
 
+
+
 addBtn.addEventListener("click", deleteFooter);
-addBtn.addEventListener("click", content);
+addBtn.addEventListener("click", addRow);
