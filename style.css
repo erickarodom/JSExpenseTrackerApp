@@ -83,18 +83,22 @@ table {
   width: 100%;
   background-color: #fff1f1;
 }
+th {
+  text-transform: capitalize;
+  background-color: rgb(43, 153, 226);
+}
+tr {
+  height: 20px;
+}
+
+tr:nth-child(odd) {
+  background-color: #e6e6e681;
+}
 
 td {
   border-bottom: 1px solid rgba(128, 128, 128, 0.301);
 }
 
-th {
-  text-transform: capitalize;
-  background-color: rgb(43, 153, 226);
-}
-tr:nth-child(odd) {
-  background-color: #e6e6e681;
-}
 td {
   color: black;
   font-weight: 800;

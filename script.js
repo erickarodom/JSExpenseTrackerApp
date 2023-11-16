@@ -1,25 +1,35 @@
 // Global Variables
-
-
-
-
 const footerMsg = document.getElementsByTagName("tfoot")[0];
 const addBtn = document.getElementById("add-btn");
 // end global variables
-// Create Elments (Global)
 
 
-// Start of logic
-addBtn.addEventListener("click", function(){
+
+/*remove table footer on click*/
+ function deleteFooter(){
     footerMsg.remove();
-});
-addBtn.addEventListener("click", function(){
+}
+
+function content(){
     const type= document.getElementById("currency").value;
     const item = document.getElementById("item-purchased").value;
     const datePurchased = document.getElementById("purchase-date").value;
     const cost = document.getElementById("amount").value;
-
-    console.log("Hello Baby");
-    console.log(cost);
+    let element = document.getElementById("table-body");
+    let newRow = document.createElement("tr");
+    let newCell = document.createElement("td");
+    newRow.appendChild(newCell);
+    element.appendChild(newRow);
+   
+   
+ 
     
-});
+}
+
+
+
+
+
+
+addBtn.addEventListener("click", deleteFooter);
+addBtn.addEventListener("click", content);
