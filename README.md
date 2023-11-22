@@ -23,7 +23,7 @@ Here is an example of a working [Expense Tracker App](https://codepen.io/seklere
    -Where the purchases occurred (eg. McDonald’s)
 5. User can delete an expense.
 6. Application is publicly available on GitHub [pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) (explained).
-7. [My Live Application](https://erickarodom.github.io/project-four/)
+7. [My Live Application](https://erickarodom.github.io/JSExpenseTrackerApp/)
 
 ## License
 Distributed under the MIT License.
