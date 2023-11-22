@@ -24,10 +24,9 @@ function addRow() {
     const createCellText = document.createElement("p"); 
        
     for (let i = 0; i < 4; i++) {
-        const addCells = newRow.insertCell(i);
-      
+        newRow.insertCell(i);
     }
-   
+    console.log(createCellText);
     console.log(newRow);
    
     newRow.appendChild(deleteBtn);
