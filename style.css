@@ -4,6 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-size: 16px;
   font-family: "Courier New", Courier, monospace;
@@ -11,12 +12,14 @@ body {
   background-color: rgb(253, 168, 208);
   color: #fff;
 }
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 5em;
 }
+
 h1,
 h2 {
   text-align: center;
@@ -47,12 +50,14 @@ h2 {
 label {
   font-size: 2em;
 }
+
 input,
 select {
   height: 2em;
   border-radius: 5px;
   border: solid 1px grey;
 }
+
 select,
 input[type="date"] {
   width: 223px;
@@ -79,16 +84,19 @@ input[type="date"] {
   width: 600px;
   min-height: 500px;
 }
+
 table {
   width: 100%;
   background-color: #ffffff;
 }
+
 th {
   text-transform: capitalize;
   background-color: rgb(43, 153, 226);
 }
+
 tr {
-  height: 20px;
+  max-height: 20px;
 }
 
 tr:nth-child(odd) {
@@ -96,17 +104,15 @@ tr:nth-child(odd) {
 }
 
 td {
-  border-bottom: 1px solid rgba(128, 128, 128, 0.301);
-}
-
-td {
   color: black;
   font-weight: 800;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.301);
 }
 
 fieldset {
   border-color: rgb(64, 151, 209);
 }
+
 legend {
   font-size: 1.5em;
 }
