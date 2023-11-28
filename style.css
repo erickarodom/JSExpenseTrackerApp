@@ -96,7 +96,7 @@ th {
 }
 
 tr {
-  max-height: 20px;
+  height: 20px;
 }
 
 tr:nth-child(odd) {

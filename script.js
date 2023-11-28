@@ -31,17 +31,10 @@ function addItems() {
     const newRow = table.insertRow(-1);
     const currencyCell = newRow.insertCell(0);
 
-    for(let i = 0; i < inputData.length;
-         i++) {
-        
-        let cell = newRow.insertCell(i+1); 
-   
-        if(inputData[i] == '' || inputData[i] == '$'+'' ){
-            alert("Enter data to procede");
-        } else{
+    for(let i = 0; i < inputData.length; i++) {
+        let cell = newRow.insertCell(i+1);
             cell.innerHTML = inputData[i];
-        }
-      }
+    }
 
     for(type in currencyTypes){
         if(type == currencyTypeInput){
@@ -59,7 +52,6 @@ function addItems() {
         "click", function(){
         newRow.remove(this);
     });
-
 }
 
 function clearInputData(){
