@@ -1,7 +1,7 @@
 This is Project Four for SDMM - Expense Tracking App
 ============================
 ### About
-![Static Badge](https://img.shields.io/badge/Remember-have_fun-blue)
+![Static Badge](https://img.shields.io/badge/Create-have_fun-blue)
 -This is a basic expense tracker built using JavaScript, HTML & CSS
 -No Frameworks used.
 
