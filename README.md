@@ -22,12 +22,13 @@ Here is my working application:  [My Expense Tracker App](https://erickarodom.gi
 
 ## Summary
 This is a JS expense tracker. The user can select from a selection of currencies, enter details about the item purchased, and add the item to a table that displays the items.
+
 These are the highlights of this project: 
--Naturally builds on skills/knowledge used building a JS ToDo App.
--HTML, CSS scaffolding on this project is basic and quick.  Definately room to get creative.
--The JavaScript for this project required me to stretch my JS logic muscles, easily the best part of this project:
- -breaking down the functionality into digestable pieces.
- -while building the smaller pieces my understanding of functions, function scope, data type selection, and using loops was greatly enhanced!
+- Naturally builds on skills/knowledge used building a JS ToDo App.
+- HTML, CSS scaffolding on this project is basic and quick.  Definately room to get creative.
+- The JavaScript for this project required me to stretch my JS logic muscles, easily the best part of this project:
+ - breaking down the functionality into digestable pieces.
+ - while building the smaller pieces my understanding of functions, function scope, data type selection, and using loops was greatly enhanced!
 
 [My Live Application](https://erickarodom.github.io/JSExpenseTrackerApp/)
 
