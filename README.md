@@ -6,7 +6,7 @@ This is Project Four for SDMM -Expense Tracking App
 This TO-DO app is going to continue to build up your HTML/CSS & Javascript skills. Similar to your clock application, the focus of building this is functionality...NOT styling. So focus on getting new TO-DO’s to show up and to check off TO-DO’s. Don’t worry about making everything look perfect. **Focus on simplicity and getting the app to work.**
 Here is an example of a working [Expense Tracker App](https://codepen.io/seklerek/pen/zKDce)
 
-![App Screenshot](images/screenshot.jpg)
+![App Screenshot](/images/screenshot.jpg)
 
 
  ## Guidelines
