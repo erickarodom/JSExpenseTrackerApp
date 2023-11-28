@@ -3,9 +3,6 @@ const addExpenseButton =
 const table =
  document.getElementById("tableBody");
 
-
-
-/*remove table footer on click*/
 function deleteFooter(){
     const footerMessage =
     document.getElementsByTagName("tfoot")[0];
@@ -16,11 +13,7 @@ function deleteFooter(){
     }
 }
 
-
-
-
-
-function addRow() {
+function addItems() {
     const currencyTypes = {
         cash:" <img src= images/coins.svg width= 20> ",
         card: " <img src= images/credit-card.svg width= 20 > ",
@@ -37,7 +30,6 @@ function addRow() {
     const inputData = [itemInput, dateInput, costInput];
     const newRow = table.insertRow(-1);
     const currencyCell = newRow.insertCell(0);
-
 
     for(let i = 0; i < inputData.length;
          i++) {
@@ -70,7 +62,18 @@ function addRow() {
 
 }
 
-
+function clearInputData(){
+    const item = 
+    document.getElementById("itemPurchased");
+    item.value = "";
+    const date = 
+    document.getElementById("purchaseDate");
+    date.value = "";
+    const amount = 
+    document.getElementById("amount");
+    amount.value = "";
+}
 
 addExpenseButton.addEventListener("click", deleteFooter);
-addExpenseButton.addEventListener("click", addRow);
+addExpenseButton.addEventListener("click", addItems);
+addExpenseButton.addEventListener("click", clearInputData);
