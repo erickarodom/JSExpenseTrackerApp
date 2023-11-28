@@ -2,13 +2,23 @@ const addExpenseButton =
  document.getElementById("addExpenseButton");
 const table =
  document.getElementById("tableBody");
-const footerMessage =
- document.getElementsByTagName("tfoot")[0];
+
+
 
 /*remove table footer on click*/
 function deleteFooter(){
+    const footerMessage =
+    document.getElementsByTagName("tfoot")[0];
+   if(footerMessage){
     footerMessage.remove();
+    } else {
+        // do nothing
+    }
 }
+
+
+
+
 
 function addRow() {
     const currencyTypes = {
@@ -23,7 +33,7 @@ function addRow() {
     document.getElementById("itemPurchased").value;
     const dateInput =
     document.getElementById("purchaseDate").value;
-    let costInput = `$${document.getElementById("amount").value}`;
+    const costInput = `$${document.getElementById("amount").value}`;
     const inputData = [itemInput, dateInput, costInput];
     const newRow = table.insertRow(-1);
     const currencyCell = newRow.insertCell(0);
@@ -31,9 +41,9 @@ function addRow() {
 
     for(let i = 0; i < inputData.length;
          i++) {
-        // Start from index 1 to skip currency cell
+        
         let cell = newRow.insertCell(i+1); 
-        //if inputs are empty alert msg, else perform code.
+   
         if(inputData[i] == '' || inputData[i] == '$'+'' ){
             alert("Enter data to procede");
         } else{
@@ -47,18 +57,20 @@ function addRow() {
         }  
     }
 
-
-
-    //delete item=============================
     const deleteButton = document.createElement("button");
     const buttonText = document.createTextNode("Delete");
+
     deleteButton.appendChild(buttonText); 
-    newRow.appendChild(deleteButton);  
+    newRow.appendChild(deleteButton); 
+
     deleteButton.addEventListener(
         "click", function(){
         newRow.remove(this);
     });
+
 }
+
+
 
 addExpenseButton.addEventListener("click", deleteFooter);
 addExpenseButton.addEventListener("click", addRow);
