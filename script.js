@@ -28,30 +28,37 @@ function addItems() {
     document.getElementById("purchaseDate").value;
     const costInput = `$${document.getElementById("amount").value}`;
     const inputData = [itemInput, dateInput, costInput];
-    const newRow = table.insertRow(-1);
-    const currencyCell = newRow.insertCell(0);
 
-    for(let i = 0; i < inputData.length; i++) {
-        let cell = newRow.insertCell(i+1);
-            cell.innerHTML = inputData[i];
+    if( itemInput == "" || dateInput == ""|| costInput == "") {
+        alert('Enter data to procede. Thanks');
+    } else {  
+        addExpenseButton.addEventListener("click", deleteFooter); 
+        const newRow = table.insertRow(-1);
+        const currencyCell = newRow.insertCell(0);
+
+      
+        for(let i = 0; i < inputData.length; i++) {
+            let cell = newRow.insertCell(i+1);
+                cell.innerHTML = inputData[i];
+        }
+
+        for(type in currencyTypes){
+            if(type == currencyTypeInput){
+            currencyCell.innerHTML = currencyTypes[type];
+            }  
+        }
+
+        const deleteButton = document.createElement("button");
+        const buttonText = document.createTextNode("Delete");
+
+        deleteButton.appendChild(buttonText); 
+        newRow.appendChild(deleteButton); 
+
+        deleteButton.addEventListener(
+            "click", function(){
+            newRow.remove(this);
+        });
     }
-
-    for(type in currencyTypes){
-        if(type == currencyTypeInput){
-        currencyCell.innerHTML = currencyTypes[type];
-        }  
-    }
-
-    const deleteButton = document.createElement("button");
-    const buttonText = document.createTextNode("Delete");
-
-    deleteButton.appendChild(buttonText); 
-    newRow.appendChild(deleteButton); 
-
-    deleteButton.addEventListener(
-        "click", function(){
-        newRow.remove(this);
-    });
 }
 
 function clearInputData(){
@@ -66,6 +73,6 @@ function clearInputData(){
     amount.value = "";
 }
 
-addExpenseButton.addEventListener("click", deleteFooter);
+addExpenseButton.addEventListener("click", deleteFooter); 
 addExpenseButton.addEventListener("click", addItems);
 addExpenseButton.addEventListener("click", clearInputData);
