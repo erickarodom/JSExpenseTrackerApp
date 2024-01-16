@@ -30,7 +30,7 @@ function addItems() {
     const inputData = [itemInput, dateInput, costInput];
 
     if( itemInput == "" || dateInput == ""|| costInput == "") {
-        alert('Enter data to procede. Thanks');
+        alert('Enter data to proceed. Thanks');
     } else {  
         addExpenseButton.addEventListener("click", deleteFooter); 
         const newRow = table.insertRow(-1);
